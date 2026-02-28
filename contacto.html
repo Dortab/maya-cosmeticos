@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Maya Productos de Belleza</title>
+    
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .contacto-seccion {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 5rem 5%;
+            gap: 40px;
+            background-color: var(--rosa-claro);
+        }
+        .contacto-info {
+            flex: 1;
+            min-width: 300px;
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .contacto-info h2 {
+            color: var(--rosa-palo);
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-family: 'Arial', sans-serif;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        .info-item i {
+            font-size: 1.5rem;
+            color: var(--oro);
+            margin-right: 15px;
+            width: 30px;
+            text-align: center;
+        }
+        .contacto-form {
+            flex: 1;
+            min-width: 300px;
+            background: var(--blanco);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--negro-mate);
+        }
+        /* El asterisco rojo/rosa para indicar obligatoriedad */
+        .asterisco {
+            color: var(--rosa-palo);
+            font-weight: bold;
+            margin-left: 3px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: 'Arial', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--rosa-palo);
+        }
+        .mapa-container {
+            width: 100%;
+            height: 400px;
+            border-top: 4px solid var(--rosa-palo);
+        }
+        .mapa-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-banner">
+        <p>✨ Distribuidores de Küül y KolorShot | Asesoría profesional por WhatsApp ✨</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+            <img src="logos/logo-sin-fondo.png" alt="MAYA" class="nav-logo-img" style="color: var(--blanco); font-size: 1.8rem; font-weight: bold; letter-spacing: 2px;">
+        </a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Catálogos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html" style="color: var(--blanco);">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header style="background-color: var(--negro-mate); color: var(--blanco); text-align: center; padding: 60px 20px;">
+        <h1 style="font-size: 3rem; letter-spacing: 3px; color: var(--rosa-palo);">Contáctanos</h1>
+        <p style="font-family: 'Arial', sans-serif; font-size: 1.2rem; margin-top: 10px;">Estamos listos para asesorarte con tus pedidos o dudas profesionales.</p>
+    </header>
+
+    <section class="contacto-seccion">
+        
+        <div class="contacto-info">
+            <h2>Hablemos de Belleza</h2>
+            <p style="font-family: 'Arial', sans-serif; margin-bottom: 30px; color: #666;">Si buscas cotizar productos para tu estética o tienes dudas sobre colorimetría, escríbenos o visítanos.</p>
+            
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Av. Lic. Benito Juárez 316, San Mateo Atenco, C.P. 52104, Estado de México.</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+                <span>(722) 860-3383</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <span>productosdebellezamaya@gmail.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <span>Lunes a Sábado: 9:00 AM - 7:00 PM</span>
+            </div>
+        </div>
+
+        <div class="contacto-form">
+            <p style="font-size: 0.85rem; color: #888; margin-bottom: 20px;">Los campos marcados con <span class="asterisco">*</span> son obligatorios.</p>
+            
+            <form action="AQUI_TU_ENLACE_DE_FORMSPREE" method="POST">
+                
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo <span class="asterisco">*</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo Electrónico <span class="asterisco">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="tu@correo.com" required title="Incluye un signo '@' en la dirección de correo electrónico.">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono (WhatsApp) <span class="asterisco">*</span></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 7221234567" pattern="[0-9]{10}" maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required title="Por favor, ingresa exactamente 10 números.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mensaje">¿En qué te podemos ayudar? <span class="asterisco">*</span></label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje o dudas sobre los productos..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-principal" style="width: 100%;">Enviar Mensaje</button>
+            </form>
+        </div>
+
+    </section>
+
+    <div class="mapa-container">
+        <iframe src="https://maps.google.com/maps?q=Av.+Lic.+Benito+Juárez+316,+San+Mateo+Atenco&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+<a href="https://wa.me/527228603383?text=%C2%A1Hola%2C%20qu%C3%A9%20tal!%20Visit%C3%A9%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20platicar%20con%20ustedes%20para%20cotizar%20algunas%20cosas%20de%20K%C3%BC%C3%BCl%20y%20KolorShot.%20%C2%BFTienen%20un%20momentito%3F%20%E2%9C%82%EF%B8%8F" class="btn-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <footer>
+        <p><strong>Maya Productos de Belleza</strong></p>
+        <p>Av. Lic. Benito Juárez 316, San Mateo Atenco</p>
+        <p class="copyright">Desarrollado por MEXIA Digital © 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

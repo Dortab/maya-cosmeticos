@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Maya Productos de Belleza</title>
+    
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .nosotros-container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 5rem 5%;
+            background-color: var(--blanco);
+        }
+        .nosotros-texto {
+            flex: 1 1 500px;
+            padding: 20px;
+        }
+        .nosotros-texto h2 {
+            font-size: 2.5rem;
+            color: var(--rosa-palo);
+            margin-bottom: 20px;
+        }
+        .nosotros-texto p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #555;
+            text-align: justify;
+        }
+        .nosotros-imagen {
+            flex: 1 1 400px;
+            padding: 20px;
+            text-align: center;
+        }
+        .nosotros-imagen img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 5px solid var(--rosa-claro);
+        }
+        .valores-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 4rem 5%;
+            background-color: var(--rosa-claro);
+            text-align: center;
+        }
+        .valor-card {
+            background: var(--blanco);
+            padding: 30px;
+            border-radius: 8px;
+            border-top: 4px solid var(--rosa-palo);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        .valor-card:hover {
+            transform: translateY(-5px);
+        }
+        .valor-card i {
+            font-size: 2.5rem;
+            color: var(--oro);
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-banner">
+        <p>✨ Tu belleza, nuestra pasión | Visítanos en San Mateo Atenco ✨</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html" style="text-decoration: none;">
+            <img src="logos/logo-sin-fondo.png" alt="MAYA" class="nav-logo-img" style="color: var(--blanco); font-size: 1.8rem; font-weight: bold; letter-spacing: 2px;">
+        </a>
+        <div class="menu-toggle" id="mobile-menu"><i class="fas fa-bars"></i></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Catálogos</a></li>
+            <li><a href="nosotros.html" style="color: var(--blanco);">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header style="background-color: var(--negro-mate); color: var(--blanco); text-align: center; padding: 60px 20px;">
+        <h1 style="font-size: 3rem; letter-spacing: 3px; color: var(--rosa-palo);">Nuestra Esencia</h1>
+        <p style="font-family: 'Arial', sans-serif; font-size: 1.2rem; margin-top: 10px; max-width: 600px; margin-left: auto; margin-right: auto;">Conoce al equipo y la pasión detrás de Maya Productos de Belleza.</p>
+    </header>
+
+    <section class="nosotros-container">
+        <div class="nosotros-texto">
+            <h2>Pasión por el Estilismo Profesional</h2>
+            <p>En <strong>Maya Productos de Belleza</strong> entendemos que el cuidado personal y el estilismo no son solo rutinas, son formas de expresión. Ubicados en el corazón de San Mateo Atenco, nacimos con una misión clara: acercar los mejores productos de calidad de salón tanto a profesionales de la belleza como a quienes aman cuidarse en casa.</p>
+            <p>Somos orgullosos distribuidores de líneas líderes en el mercado como <strong>Küül Color System y KolorShot Profesional</strong>. Nuestro compromiso va más allá de entregar un producto; buscamos brindar una asesoría cercana, asegurándonos de que cada tinte, tratamiento o cosmético que te lleves, sea el ideal para resaltar tu esencia.</p>
+            <p>Ya sea que busques equipar tu estética o encontrar tu tono perfecto, en Maya siempre encontrarás calidad, variedad y una sonrisa dispuesta a ayudarte.</p>
+        </div>
+        <div class="nosotros-imagen">
+            <img src="productos/foto-nosotros.jpg" alt="Local Maya Productos de Belleza">
+        </div>
+    </section>
+
+    <section class="valores-grid">
+        <div class="valor-card">
+            <i class="fas fa-award"></i>
+            <h3>Calidad Garantizada</h3>
+            <p>Trabajamos solo con marcas reconocidas y fórmulas probadas por expertos en cosmetología y colorimetría.</p>
+        </div>
+        <div class="valor-card">
+            <i class="fas fa-comments"></i>
+            <h3>Asesoría Cercana</h3>
+            <p>No solo vendemos, te acompañamos en tu decisión para que obtengas los resultados que realmente esperas.</p>
+        </div>
+        <div class="valor-card">
+            <i class="fas fa-heart"></i>
+            <h3>Compromiso Local</h3>
+            <p>Somos una empresa orgullosamente establecida en el Estado de México, impulsando la belleza en nuestra comunidad.</p>
+        </div>
+    </section>
+
+<a href="https://wa.me/527228603383?text=%C2%A1Hola%2C%20qu%C3%A9%20tal!%20Visit%C3%A9%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20platicar%20con%20ustedes%20para%20cotizar%20algunas%20cosas%20de%20K%C3%BC%C3%BCl%20y%20KolorShot.%20%C2%BFTienen%20un%20momentito%3F%20%E2%9C%82%EF%B8%8F" class="btn-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+    <footer>
+        <p><strong>Maya Productos de Belleza</strong></p>
+        <p>Av. Lic. Benito Juárez 316, San Mateo Atenco</p>
+        <p class="copyright">Desarrollado por MEXIA Digital &copy; 2026</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
